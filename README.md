@@ -15,6 +15,9 @@ yeoman init angular
 ## You Now Have a Running Angular app
 yeoman server
 
+- Comment out line 33 of _compass_twitter_boostrap.scss, to remove warning about the icon fonts, when using yeoman server (perhaps a pull request should be made for the AngularJS generator?)
+- Change title to “Yeoman at the Movies” in app/index.html, to show off the livereload capabilities of Yeoman
+
 ## Install the Color JS library we’ll Use
 yeoman install git://github.com/brehaut/color-js.git --save
 
