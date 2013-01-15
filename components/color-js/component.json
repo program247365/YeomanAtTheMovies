@@ -1,0 +1,9 @@
+{
+  "name": "color-js",
+  "version": "0.0.0",
+  "commit": "f8bd3fc8dff53306f7411a6214cd7653512b0a80",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brehaut/color-js.git"
+  }
+}
