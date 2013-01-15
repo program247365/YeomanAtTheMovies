@@ -5,7 +5,7 @@ var YeomanAtTheMoviesApp = angular.module('YeomanAtTheMoviesApp', [])
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MoviesCtrl'
       })
       .otherwise({
         redirectTo: '/'

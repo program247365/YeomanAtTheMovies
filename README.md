@@ -41,6 +41,24 @@ It even added the /scripts/controllers/Movies.js to your index.html file for you
 Now let’s see that the two tests Yeoman has generated for you, are currently passing (one for the initial app, and one for the newly created controller):
 yeoman test
 
+## Add Logic to Your Movie Controller
+
+---
+### Appendix:
+
+#### The Movie Database API
+
+Documentation: http://docs.themoviedb.apiary.io/
+
+- Base URL: http://api.themoviedb.org/3
+- Get Configuration data: /3/configuration
+- Get a Movie: /3/movie/{id}
+- Get a Movie’s Posters: /3/movie/{id}/images
+	- Example URL to put together: https://d1zm4mmpsrckwj.cloudfront.net/t/p/w500/jc1BopnUnrQzWUWSkgfPfcMi5Gy.jpg
+
+Full request looks like:
+http://api.themoviedb.org/3/movie/MOVIEID?api_key=###
+
 ---
 
 ### Resources

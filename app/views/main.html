@@ -1,9 +1,9 @@
-<div class="hero-unit">
-  <h1>Cheerio!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+<div class="hero-unit" style="margin: 20px;">
+	<h1>Yeoman at the Movies</h1>
+	<li style="list-style: none; margin: 0 20px 20px 20px;" ng-repeat="movie in movies">
+		<h2>{{movie.title}}</h2>
+		<img ng-src="{{movie.poster}}"/>
+		<p>{{movie.tagline}}</p>
+	</li>
   </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
 </div>
