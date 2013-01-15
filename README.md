@@ -24,7 +24,7 @@ yeoman server
 
 You can first do: yeoman search [package name]. If you don’t find it there, you can arbitrarily tell Yeoman to install a particular github url, like the following:
 
-yeoman install git://github.com/brehaut/color-js.git --save
+yeoman install git://github.com/lokesh/color-thief.git --save
 
 Don’t worry about the “could not find local component.json.” message you get. It just means that you’re installing an arbitrary library, and Yeoman (Bower) doesn’t know about it’s dependencies.
 

@@ -1,0 +1,9 @@
+{
+  "name": "color-thief",
+  "version": "0.0.0",
+  "commit": "681cfe8b0d7233b80fa7d8f5d36dc9a96ed94a2c",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lokesh/color-thief.git"
+  }
+}
