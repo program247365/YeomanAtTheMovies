@@ -7,15 +7,21 @@ This is a followup demo to the initial presentation that I did on Yeoman, which 
 
 ##How this app was built with Yeoman
 
-## Start an Angular MVC application
+## Start an Angular MVC application ##
+
+```bash
 yeoman init angular
+```
 
 - Say “Y”, to Twitter Bootstrap question.
 - Say “Y”, to Twitter Bootstrap for Compass question.
 - Then “N” to final question about making any changes.
 
-## You Now Have a Running Angular app
+## You Now Have a Running Angular app ##
+
+```bash
 yeoman server
+```
 
 - Comment out line 33 of _compass_twitter_boostrap.scss, to remove warning about the icon fonts, when using yeoman server (perhaps a pull request should be made for the AngularJS generator?)
 - Change title to “Yeoman at the Movies” in app/index.html, to show off the livereload capabilities of Yeoman
@@ -24,15 +30,23 @@ yeoman server
 
 You can first do: yeoman search [package name]. If you don’t find it there, you can arbitrarily tell Yeoman to install a particular github url, like the following:
 
+```bash
 yeoman install git://github.com/lokesh/color-thief.git --save
+```
 
 Don’t worry about the “could not find local component.json.” message you get. It just means that you’re installing an arbitrary library, and Yeoman (Bower) doesn’t know about it’s dependencies.
 
 Show that you now have a library installed and Yeoman knows about it:
-yeoman list
 
-## Create the Movie Controller
+```bash
+yeoman list
+```
+
+## Create the Movie Controller ##
+
+```bash
 yeoman init angular:controller movies
+```
 
 Yeoman will now tell you it created two JS files for this AngularJS controller. The file that will do the work, and a test file, with a single test already in it for you.
 
@@ -45,7 +59,7 @@ yeoman test
 
 Update the movies.js file to be:
 
-<code>
+```javascript
 'use strict';
 
 YeomanAtTheMoviesApp.controller('MoviesCtrl', function($scope, $http, $templateCache) {
@@ -104,11 +118,11 @@ $scope.movies.tmdb_api_key = 'PUTYOURAPIKEYHERE';
 var poster_url = $scope.getMovies();
 
 });
-</code>
+```
 
 And update the main.html view file to be:
 
-<code>
+```html
 <div class="hero-unit" style="margin: 20px;">
     <h1>Yeoman at the Movies</h1>
     <li style="list-style: none; margin: 0 20px 20px 20px;" ng-repeat="movie in movies">
@@ -118,7 +132,7 @@ And update the main.html view file to be:
     </li>
   </ul>
 </div>
-</code>
+```
 
 ---
 ### Appendix:
