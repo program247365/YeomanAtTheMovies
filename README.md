@@ -3,6 +3,8 @@ YeomanAtTheMovies
 
 A small AngularJS to show off building something cool with Yeoman.
 
+This is a followup demo to the initial presentation that I did on Yeoman, which can be found here: https://github.com/program247365/yeoman-presentation See the README for a link to the slides.
+
 ##How this app was built with Yeoman
 
 ## Start an Angular MVC application
@@ -31,6 +33,13 @@ yeoman list
 
 ## Create the Movie Controller
 yeoman init angular:controller Movies
+
+Yeoman will now tell you it created two JS files for this AngularJS controller. The file that will do the work, and a test file, with a single test already in it for you.
+
+It even added the /scripts/controllers/Movies.js to your index.html file for you!
+
+Now let’s see that the two tests Yeoman has generated for you, are currently passing (one for the initial app, and one for the newly created controller):
+yeoman test
 
 ---
 
